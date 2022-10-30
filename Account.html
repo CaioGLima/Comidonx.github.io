@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>SignUp</title>
+    <link rel="shortcut icon" href="..\imagens\bigode.jpg" type="image/x-icon"> 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+  <body>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="local.html">Lojas</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contacts.html">Contato</a></li>
+      </ul>
+    </nav>
+</body>
+<div class="container" >
+  <a class="links" id="paracadastro"></a>
+  <a class="links" id="paralogin"></a>
+   
+  <div class="content">      
+    <!--FORMULÁRIO DE LOGIN-->
+    <div id="login">
+      <form method="post" action=""> 
+        <h3>Login</h3> 
+        <p> 
+          <label for="nome_login">E-mail</label>
+          <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@email.com"/>
+        </p>
+         
+        <p> 
+          <label for="email_login">Senha</label>
+          <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+        </p>
+         
+        <p> 
+          <input type="checkbox" name="manterlogin" id="manterlogin" value="" /> 
+          <label for="manterlogado">Manter Login</label>
+        </p>
+         
+        <p> 
+          <input type="submit" value="Logar" /> 
+        </p>
+         
+        <p class="link">
+          Ainda não tem conta?
+          <a href="#paracadastro">Cadastre-se</a>
+        </p>
+      </form>
+    </div>
+
+    <!--FORMULÁRIO DE CADASTRO-->
+    <div id="cadastro">
+      <form method="post" action=""> 
+        <h3>Cadastro</h3> 
+         
+        <p> 
+          <label for="nome_cad"> Nome</label>
+          <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+        </p>
+        <p> 
+          <label for="nome_cad"> Sobrenome</label>
+          <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+        </p>
+         
+        <p> 
+          <label for="email_cad"> E-mail</label>
+          <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@email.com"/> 
+        </p>
+         
+        <p> 
+          <label for="senha_cad"> Senha</label>
+          <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+        </p>
+        <p> 
+          <label for="senha_cad"> Confirmar Senha</label>
+          <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+        </p>
+        <p>
+          <label for="cpf_cad">CPF</label>
+          <input id="cpf_cad" name="cpf_cad"
+          requiered="required" type="cpf"
+          placeholder="ex. 123.456.789-00"/>
+        </p>
+        <p>
+          <label for="telefone_cad">Telefone</label>
+          <input id="telefone_cad" name="telefone_cad"
+          placeholder="ex. (00) 12345-6789"/>
+        </p>
+        <p>
+          <label for="idade_cad">Idade</label>
+          <input id="idade_cad" name="idade_cad"
+          placeholder="**anos"/>
+        </p>
+        <p>
+          <label for="genero_cad">Gênero</label>
+          <input id="genero_cad" name="genero_cad"
+          placeholder="Homem/Mulher"/>
+        </p>
+        <p>
+          <label for="estadoc_cad">Estado Civil</label>
+          <input id="estadoc_cad" name="estado_cad"
+          placeholder="Solteiro/Casado"/>
+        </p>
+
+        <p> 
+          <input type="submit" value="Cadastrar"/> 
+        </p>
+         
+        <p class="link">  
+          Já tem conta?
+          <a href="#paralogin"> Ir para Login </a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>  
+</html>

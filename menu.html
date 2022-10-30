@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <title>Cardapio</title>
+    <link rel="shortcut icon" href="..\imagens\1.jpg" type="image/x-icon"> 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+  <body>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="local.html">Lojas</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contacts.html">Contato</a></li>
+        
+        <li><a class="menu-oppener"><span>0</span>🛒</a></li>
+      
+      </ul>
+    </nav>
+
+    <!-- modelos de menu na lista e no carrinho -->
+    <div class="models">
+
+      <!-- menu na lista -->
+      <div class="menu-item">
+          <a href="">
+              <div class="menu-item--img"><img src="" /></div>
+              <div class="menu-item--add">+</div>
+          </a>
+          <div class="menu-item--price">R$ --</div>
+          <div class="menu-item--name">--</div>
+          <div class="menu-item--desc">--</div>
+      </div>
+
+      <!-- menu no carrinho -->
+      <div class="cart--item">
+          <img src="" />
+          <div class="cart--item-nome">--</div>
+          <div class="cart--item--qtarea">
+              <button class="cart--item-qtmenos">-</button>
+              <div class="cart--item--qt">1</div>
+              <button class="cart--item-qtmais">+</button>
+          </div>
+      </div>
+
+  </div>
+  <!-- conteudo principal -->
+  <main>
+      <h2>menu</h2>
+      <div class="cardapio-area"></div>
+  </main>
+  <!-- /conteudo principal -->
+
+  <!-- aside do carrinho -->
+  <aside>
+      <div class="cart--area">
+          <div class="menu-closer">❌</div>
+          <h1>Seu Pedido</h1>
+          <div class="cart"></div>
+          <div class="cart--details">
+              <div class="cart--totalitem subtotal">
+                  <span>Subtotal</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem desconto">
+                  <span>Desconto</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--totalitem total big">
+                  <span>Total</span>
+                  <span>R$ --</span>
+              </div>
+              <div class="cart--finalizar">Finalizar a compra</div>
+          </div>
+      </div>
+  </aside>
+  <!-- /aside do carrinho -->
+
+  <!-- janela modal .menuWindowArea -->
+  <div class="menuWindowArea">
+      <div class="menuWindowBody">
+          <div class="menuInfo--cancelMobileButton">Voltar</div>
+          <div class="menuBig">
+              <img src="" />
+          </div>
+          <div class="menuInfo">
+              <h1>--</h1>
+              <div class="menuInfo--desc">--</div>
+              <div class="menuInfo--sizearea">
+                  <div class="menuInfo--sector">Tamanho</div>
+                  <div class="menuInfo--sizes">
+                      <div data-key="P" class="menuInfo--size selected">PEQUENA <span>--</span></div>
+                      <div data-key="M" class="menuInfo--size">MÉDIA <span>--</span></div>
+                      <div data-key="G" class="menuInfo--size">GRANDE <span>--</span></div>
+                  </div>
+              </div>
+              <div class="menuInfo--pricearea">
+                  <div class="menuInfo--sector">Preço</div>
+                  <div class="menuInfo--price">
+                      <div class="menuInfo--actualPrice">R$ --</div>
+                      <div class="menuInfo--qtarea">
+                          <button class="menuInfo--qtmenos">-</button>
+                          <div class="menuInfo--qt">1</div>
+                          <button class="menuInfo--qtmais">+</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="menuInfo--addButton">Adicionar ao carrinho</div>
+              <div class="menuInfo--cancelButton">Cancelar</div>
+          </div>
+      </div>
+  </div>
+  <!-- /janela modal .menuWindowArea -->
+
+  <script src="Js/menu.js"></script>
+  <script src="Js/script.js"></script>
+  </body>
+</html>
+
+   
